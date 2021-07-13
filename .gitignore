@@ -1,0 +1,6 @@
+Output/
+.idea/
+cmake-build-*/
+
+*.jlink
+*.emSession
