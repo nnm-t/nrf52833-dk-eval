@@ -1,6 +1,6 @@
 <!DOCTYPE CrossStudio_Project_File>
-<solution Name="nrf52833-ble-test" target="8" version="2">
-  <project Name="nrf52833-ble-test">
+<solution Name="nrf52833-dk-eval" target="8" version="2">
+  <project Name="nrf52833-dk-eval">
     <configuration
       Name="Common"
       arm_architecture="v7EM"
