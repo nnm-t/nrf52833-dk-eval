@@ -94,6 +94,7 @@
     </folder>
     <folder Name="Application">
       <file file_name="Src/main.c" />
+      <file file_name="Src/cppmain.cpp" />
       <file file_name="Inc/sdk_config.h" />
     </folder>
     <folder Name="nRF_Segger_RTT">
