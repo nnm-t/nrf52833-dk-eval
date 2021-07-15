@@ -36,6 +36,7 @@ set(CMAKE_CXX_STANDARD 14)
 
 include_directories(
         ${PROJ_DIR}/Inc
+        ${PROJ_DIR}/Inc/Peripherals
         ${SDK_ROOT}/components/ble/common
         ${SDK_ROOT}/components/ble/ble_advertising
         ${SDK_ROOT}/components/ble/ble_link_ctx_manager
@@ -76,6 +77,7 @@ include_directories(
 
 file(GLOB_RECURSE SOURCES
         ${PROJ_DIR}/Src/*.*
+        ${PROJ_DIR}/Src/Peripherals/*.*
         ${SDK_ROOT}/components/ble/ble_advertising/ble_advertising.c
         ${SDK_ROOT}/components/ble/ble_link_ctx_manager/ble_link_ctx_manager.c
         ${SDK_ROOT}/components/ble/ble_services/ble_nus/ble_nus.c
