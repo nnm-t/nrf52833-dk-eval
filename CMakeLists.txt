@@ -36,6 +36,7 @@ set(CMAKE_CXX_STANDARD 14)
 
 include_directories(
         ${PROJ_DIR}/Inc
+        ${PROJ_DIR}/Inc/Config
         ${PROJ_DIR}/Inc/Peripherals
         ${SDK_ROOT}/components/ble/common
         ${SDK_ROOT}/components/ble/ble_advertising
@@ -62,11 +63,13 @@ include_directories(
         ${SDK_ROOT}/components/libraries/ringbuf
         ${SDK_ROOT}/components/libraries/strerror
         ${SDK_ROOT}/components/libraries/timer
+        ${SDK_ROOT}/components/libraries/twi_mngr
         ${SDK_ROOT}/components/libraries/util
         ${SDK_ROOT}/components/libraries/uart
         ${SDK_ROOT}/components/toolchain/cmsis/include
         ${SDK_ROOT}/external/fprintf
         ${SDK_ROOT}/integration/nrfx
+        ${SDK_ROOT}/integration/nrfx/legacy
         ${SDK_ROOT}/modules/nrfx
         ${SDK_ROOT}/modules/nrfx/drivers
         ${SDK_ROOT}/modules/nrfx/drivers/include
@@ -105,11 +108,13 @@ file(GLOB_RECURSE SOURCES
         ${SDK_ROOT}/components/libraries/memobj/nrf_memobj.c
         ${SDK_ROOT}/components/libraries/ringbuf/nrf_ringbuf.c
         ${SDK_ROOT}/components/libraries/strerror/nrf_strerror.c
+        ${SDK_ROOT}/components/libraries/twi_mngr/nrf_twi_mngr.c
         ${SDK_ROOT}/components/softdevice/common/nrf_sdh.c
         ${SDK_ROOT}/components/softdevice/common/nrf_sdh_ble.c
         ${SDK_ROOT}/components/softdevice/common/nrf_sdh_soc.c
         ${SDK_ROOT}/external/fprintf/nrf_fprintf.c
         ${SDK_ROOT}/external/fprintf/nrf_fprintf_format.c
+        ${SDK_ROOT}/integration/nrfx/legacy/nrf_drv_twi.c
         ${SDK_ROOT}/modules/nrfx/soc/nrfx_atomic.c
         ${SDK_ROOT}/modules/nrfx/mdk/system_nrf52833.c
         ${SDK_ROOT}/modules/nrfx/mdk/ses_startup_nrf52833.s
