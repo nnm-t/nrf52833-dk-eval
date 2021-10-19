@@ -103,6 +103,7 @@
       <file file_name="Src/Peripherals/gpio_input.cpp" />
       <file file_name="Src/Peripherals/gpio_output.cpp" />
       <file file_name="Src/Peripherals/i2c_driver.cpp" />
+      <file file_name="Src/Peripherals/spi_driver.cpp" />
       <file file_name="Inc/Config/sdk_config.h" />
     </folder>
     <folder Name="nRF_Segger_RTT">

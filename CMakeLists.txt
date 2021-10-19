@@ -115,6 +115,7 @@ file(GLOB_RECURSE SOURCES
         ${SDK_ROOT}/external/fprintf/nrf_fprintf.c
         ${SDK_ROOT}/external/fprintf/nrf_fprintf_format.c
         ${SDK_ROOT}/integration/nrfx/legacy/nrf_drv_twi.c
+        ${SDK_ROOT}/integration/nrfx/legacy/nrf_drv_spi.c
         ${SDK_ROOT}/modules/nrfx/soc/nrfx_atomic.c
         ${SDK_ROOT}/modules/nrfx/mdk/system_nrf52833.c
         ${SDK_ROOT}/modules/nrfx/mdk/ses_startup_nrf52833.s
