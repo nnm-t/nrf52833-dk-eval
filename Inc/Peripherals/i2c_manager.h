@@ -10,7 +10,7 @@ class I2CManager : public I2C
 {
     static constexpr const uint8_t max_pending_transactions = 5;
 
-    NRF_TWI_MNGR_DEF(_i2c_manager, max_pending_transactions, instance_id);
+    NRF_TWI_MNGR_DEF(_i2c_manager, max_pending_transactions, I2C_INSTANCE_ID);
 
     nrf_twi_mngr_transaction_t _transaction;
 

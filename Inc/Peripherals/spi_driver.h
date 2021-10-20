@@ -4,11 +4,9 @@
 
 #include "spi.h"
 
-#define SPI_INSTANCE 0
-
 class SPIDriver : public SPI
 {
-    const nrf_drv_spi_t _spi_driver = NRF_DRV_SPI_INSTANCE(SPI_INSTANCE);
+    const nrf_drv_spi_t _spi_driver = NRF_DRV_SPI_INSTANCE(SPI_INSTANCE_ID);
     nrf_drv_spi_evt_handler_t _event_handler;
 
 public:

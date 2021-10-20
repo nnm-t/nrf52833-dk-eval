@@ -3,6 +3,8 @@
 #include "nrf_spi.h"
 #include "nrf_drv_spi.h"
 
+#define SPI_INSTANCE_ID 0
+
 class SPI
 {
 protected:

@@ -60,7 +60,9 @@ include_directories(
         ${SDK_ROOT}/components/libraries/log/src
         ${SDK_ROOT}/components/libraries/memobj
         ${SDK_ROOT}/components/libraries/pwr_mgmt
+        ${SDK_ROOT}/components/libraries/queue
         ${SDK_ROOT}/components/libraries/ringbuf
+        ${SDK_ROOT}/components/libraries/spi_mngr
         ${SDK_ROOT}/components/libraries/strerror
         ${SDK_ROOT}/components/libraries/timer
         ${SDK_ROOT}/components/libraries/twi_mngr
@@ -106,7 +108,9 @@ file(GLOB_RECURSE SOURCES
         ${SDK_ROOT}/components/libraries/atomic/nrf_atomic.c
         ${SDK_ROOT}/components/libraries/balloc/nrf_balloc.c
         ${SDK_ROOT}/components/libraries/memobj/nrf_memobj.c
+        ${SDK_ROOT}/components/libraries/queue/nrf_queue.c
         ${SDK_ROOT}/components/libraries/ringbuf/nrf_ringbuf.c
+        ${SDK_ROOT}/components/libraries/spi_mngr/nrf_spi_mngr.c
         ${SDK_ROOT}/components/libraries/strerror/nrf_strerror.c
         ${SDK_ROOT}/components/libraries/twi_mngr/nrf_twi_mngr.c
         ${SDK_ROOT}/components/softdevice/common/nrf_sdh.c
